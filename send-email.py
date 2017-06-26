@@ -62,6 +62,7 @@ Team CFE
                     date=date,
                     total=amount
                 )
+                # .get() allows it to be none. whereas detail["email"] would raise an exception
                 user_email = detail.get("email")
                 if user_email:
                     # user_data dictionary with email and message
