@@ -2,9 +2,12 @@ import csv
 import datetime
 import shutil
 from tempfile import NamedTemporaryFile
+import os
+
+file_path = os.path.join(os.getcwd(),"data.csv")
 
 def read_data(user_id=None, email=None):
-    filename = "data.csv"
+    filename = file_path
     with open(filename, "r") as csvfile:
         reader = csv.DictReader(csvfile)
         items = []
@@ -32,7 +35,7 @@ print(read_data(8))
 
 
 def get_length(file_path):
-    with open("data.csv", "r") as csvfile:
+    with open(file_path, "r") as csvfile:
         reader = csv.reader(csvfile)
         reader_list = list(reader)
         return len(reader_list)
@@ -52,10 +55,10 @@ def append_data(file_path, name, email, amount):
                 "date": datetime.datetime.now()
             })
 
-#append_data("data.csv", "Justin", "example@gmail.com", 123.22)
+#append_data(file_path, "Justin", "example@gmail.com", 123.22)
 
 def edit_data(edit_id=None, email=None, amount=None, sent=None):
-    filename = "data.csv"
+    filename = file_path
     temp_file = NamedTemporaryFile(delete=False)
 
     with open(filename, "rb") as csvfile, temp_file:
