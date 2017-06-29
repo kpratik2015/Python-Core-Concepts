@@ -1,0 +1,5 @@
+1. pip install virtualenv   
+2. virtualenv -p py.exe scrap && cd scrap
+3. .\Scripts\activate.bat
+4. pip freeze
+5. pip install requests beautifulsoup4
