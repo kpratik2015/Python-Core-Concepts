@@ -2,7 +2,7 @@ Hello {name}!
 
 Thank you for the purchase on. 
 We hope you are exicted about using it. Just as a
-reminder the purchase total was ${total}.
+reminder the purchase total was ${amount}.
 Have a great one!
 
 Best, 
