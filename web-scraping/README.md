@@ -1,3 +1,3 @@
-# Python Core Concepts
+# Web Scraping
 
-As seen on http://codes.pratikkataria.com/ or Programming Epitome Android App
+![Alt Text](http://pratikkataria.com/assets/ItbfkY2lVw.gif)
